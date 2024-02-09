@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@lib/twc": ["./lib/twc.js"] // Add the import statement for the 'twc.js' file
     }
   }
 }
