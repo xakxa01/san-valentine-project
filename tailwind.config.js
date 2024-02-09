@@ -22,6 +22,8 @@ module.exports = {
         "dark-cyan": "#5DB5CC",
         "custom-blue": "#536CF6",
         "custom-green": "#FF4948",
+        "cream": "#F5EEE6",
+        "dark-steal": "#9BB8CD"
       },
     },
   },

@@ -1,0 +1,7 @@
+.box {
+	@apply bg-cream w-[44.6rem] h-[20.73rem] p-4 rounded-2xl shadow-lg
+}
+
+.button {
+	@apply bg-dark-steal py-3 px-9 rounded-full
+}
