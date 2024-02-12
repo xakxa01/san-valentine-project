@@ -1,7 +1,31 @@
+.container {
+	@apply flex flex-col items-center -mt-32 relative
+}
+
 .box {
-	@apply bg-cream w-[44.6rem] h-[20.73rem] p-4 rounded-2xl shadow-lg
+	@apply bg-cream w-[44.6rem] h-[20.73rem] p-4 rounded-2xl shadow-lg flex flex-col items-center z-30
 }
 
 .button {
-	@apply bg-dark-steal py-3 px-9 rounded-full
+	@apply bg-dark-steal h-6 w-20 rounded-full hover:animate-jump hover:animate-once
+}
+
+.printerMouthContainer {
+	@apply w-6/12 h-[22rem] rounded-t-2xl overflow-hidden mt-48 absolute flex flex-col items-center
+}
+
+.printerMouth {
+	@apply bg-light-black-2 rounded-full w-full h-6 z-50
+}
+
+.topBar {
+	@apply flex justify-between w-full
+}
+
+.back {
+	@apply bg-skin h-28 w-7/12 rounded-t-2xl relative
+}
+
+.snakeAnimation {
+	@apply animate-shake animate-ease-linear
 }

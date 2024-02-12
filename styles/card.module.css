@@ -1,0 +1,31 @@
+.container {
+	@apply w-[20.19rem] h-[10.69rem] bg-slate-200 mt-11 rounded-xl shadow-sm flex flex-col items-center
+}
+
+.topCard {
+	@apply w-full h-1/2 bg-slate-100 flex justify-center items-end rounded-xl z-30 transition-all shadow
+}
+
+.cardContainer {
+	@apply w-full h-2/3 flex justify-center items-center -mt-5 z-20 bg-white rounded-xl
+}
+
+.heart {
+	@apply text-pastel-pink translate-y-6
+}
+
+.heartButton:hover {
+	@apply animate-wiggle animate-infinite animate-duration-300
+}
+
+.topCardOpen {
+	@apply transition-all duration-500 transform -translate-y-full -rotate-x-180
+}
+
+.topCardClose {
+	@apply transition-all duration-500 transform translate-y-0 rotate-x-0
+}
+
+.message {
+	@apply bg-slate-100 absolute w-10/12 h-2/6 rounded-lg mt-3 flex justify-center hover:animate-shake hover:animate-infinite
+}

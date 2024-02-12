@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		font-family: Inter, system-ui, sans-serif;
+	}
+
+	* {
+		outline: none;
+		border: none;
+	}
+}
+
+/* Basic editor styles */
+.ProseMirror>*+* {
+	margin-top: 0.75em;
+}
+
+.ProseMirror p {
+	margin: 0;
+	@apply text-light-black-1 text-sm;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+	line-height: 1.1;
+	@apply font-bold text-light-black-1;
+}
+
+.ProseMirror h1 {
+	@apply text-xl;
+}
+
+.ProseMirror h2 {
+	@apply text-lg;
+}
+
+.ProseMirror h3 {
+	@apply text-base;
+}
+
+/* list */
+.ProseMirror ul,
+.ProseMirror ol {
+	padding-left: 2em;
+}
+
+.ProseMirror ul {
+	list-style-type: disc;
+}
+
+.ProseMirror ol {
+	list-style-type: decimal;
+}
