@@ -1,0 +1,15 @@
+.container {
+	@apply bg-pastel-cyan w-full h-screen flex justify-center items-center absolute top-0 left-0 overflow-hidden
+}
+
+.paper {
+	@apply bg-white w-5/12 h-5/6 rounded-2xl shadow-lg absolute
+}
+
+.title {
+	@apply text-3xl font-extrabold text-center pt-8 text-light-black-1
+}
+
+.text {
+	@apply text-xl px-8 py-4 text-light-black-1 font-bold
+}

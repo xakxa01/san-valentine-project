@@ -1,0 +1,15 @@
+.modal {
+	@apply border-dashed bg-pastel-pink-2 border-pastel-pink rounded-2xl flex flex-col items-center justify-center
+}
+
+.modalBtn {
+	@apply bg-pastel-cyan text-white text-3xl px-5 py-2 rounded-lg
+}
+
+.xaviHeart {
+	@apply p-10 flex justify-center
+}
+
+.message {
+	@apply text-3xl font-bold text-light-black-1 w-9/12 m-auto
+}

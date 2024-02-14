@@ -13,33 +13,24 @@ const Printer = () => {
 	const [getPaper, setGetPaper] = useState(false);
 	const [wiggleAnimation, setWiggleAnimation] = useState(false);
 
-
-
 	const handleButton = () => {
-		// setShowCard(true);
 		setGetPaper(true);
 
-		setTimeout(() => {
-			setShowCard(true);
-		}, 3000);
+		setTimeout(() => setShowCard(true), 3000);
 	}
 
 	useEffect(() => {
-		if (getPaper && !showCard) setWiggleAnimation(true);
+		if (getPaper && !showCard) setTimeout(() => setWiggleAnimation(true), 600);
 		else setWiggleAnimation(false);
 	}, [getPaper, showCard]);
 
 	return <div className={twc(
-		{
-			"animate-wiggle-more animate-infinite animate-duration-300": wiggleAnimation,
-		},
+		{ [styles.wiggleAnimation]: wiggleAnimation },
 		styles.container
 	)}>
 		<div className={styles.back} >
 			<div className={twc(
-				{
-					"translate-y-52": getPaper,
-				},
+				{ "translate-y-52": getPaper },
 				'transition-all z-10'
 			)}>
 				<Paper />
@@ -77,4 +68,5 @@ const Printer = () => {
 		</div>
 	</div>;
 };
+
 export default Printer;

@@ -1,16 +1,19 @@
+import { nextui } from "@nextui-org/react";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
       colors: {
-        "pastel-yellow-1": "#FFEDED",
         "pastel-yellow-2": "#FFF8E3",
         "pastel-pink": "#E6A4B4",
+        "pastel-pink-2": "#FFEDED",
         "pastel-cyan": "#7BD3EA",
         "custom-cyan": "#40A2E3",
         "light-black-1": "#252A32",
@@ -26,12 +29,15 @@ module.exports = {
         "custom-green": "#FF4948",
         "cream": "#F5EEE6",
         "dark-steal": "#9BB8CD",
-        "skin": "#F3D7CA"
+        "skin": "#F3D7CA",
+        "cyan-heart": "#5DB5CC"
       },
     },
   },
+  darkMode: "class",
   plugins: [
     require('tailwindcss-animated'),
-    require("@xpd/tailwind-3dtransforms")
+    require("@xpd/tailwind-3dtransforms"),
+    nextui()
   ],
 };

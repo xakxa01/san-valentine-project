@@ -1,0 +1,68 @@
+.section {
+	position: relative;
+	overflow: hidden;
+}
+
+.section .text {
+	position: relative;
+	transform: skewY(345deg) translateY(-200px);
+	-webkit-transform: skewY(345deg) translateY(-200px);
+	-moz-transform: skewY(345deg) translateY(-200px);
+	-ms-transform: skewY(345deg) translateY(-200px);
+	-o-transform: skewY(345deg) translateY(-200px);
+}
+
+.section .text .letterContainer {
+	@apply text-cyan-heart;
+	position: relative;
+	width: 100%;
+	font-size: 8em;
+	pointer-events: none;
+	line-height: 1em;
+	white-space: nowrap;
+	transform: translateX(calc(0% - var(--x) * 2));
+	-webkit-transform: translateX(calc(0% - var(--x) * 2));
+	-moz-transform: translateX(calc(0% - var(--x) * 2));
+	-ms-transform: translateX(calc(0% - var(--x) * 2));
+	-o-transform: translateX(calc(0% - var(--x) * 2));
+}
+
+.section .text .letterContainer .word {
+	margin-inline: 10px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.section .text .letterContainer .word::selection {
+	background: transparent;
+}
+
+@media (max-width: 768px) {
+	@keyframes letter {
+		0% {
+			transform: translateX(-400%);
+			-webkit-transform: translateX(-400%);
+			-moz-transform: translateX(-400%);
+			-ms-transform: translateX(-400%);
+			-o-transform: translateX(-400%);
+		}
+
+		100% {
+			transform: translateX(0%);
+			-webkit-transform: translateX(0%);
+			-moz-transform: translateX(0%);
+			-ms-transform: translateX(0%);
+			-o-transform: translateX(0%);
+		}
+	}
+
+	.section .text .letterContainer {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		animation: 10s ease-in-out infinite alternate letter;
+		-webkit-animation: 10s ease-in-out infinite alternate letter;
+	}
+}

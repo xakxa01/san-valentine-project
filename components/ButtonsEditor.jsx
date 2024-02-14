@@ -29,7 +29,7 @@ const ButtonsEditor = ({ editor }) => {
 		},
 	]
 
-	return <div className='flex justify-center items-center'>
+	return <div className='flex justify-center items-center absolute m-auto inset-x-0 bottom-0'>
 		{arrayButtons.map(({ icon: Icon, event }, index) => (
 			<button
 				key={index}

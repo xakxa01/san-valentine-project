@@ -15,7 +15,7 @@
 }
 
 .printerMouth {
-	@apply bg-light-black-2 rounded-full w-full h-6 z-50
+	@apply bg-light-black-2 rounded-full w-full h-6 z-40
 }
 
 .topBar {
@@ -26,6 +26,6 @@
 	@apply bg-skin h-28 w-7/12 rounded-t-2xl relative
 }
 
-.snakeAnimation {
-	@apply animate-shake animate-ease-linear
+.wiggleAnimation {
+	@apply animate-wiggle-more animate-infinite animate-duration-300
 }
