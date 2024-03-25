@@ -6,7 +6,6 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 const LoveCard = () => {
   return <div className={`${nunito.className} ${styles.container}`}>
-    <ParallaxText />
     <div className={styles.paper}>
       <h1 className={styles.title}>
         Esta sí es en serio jajdsf
